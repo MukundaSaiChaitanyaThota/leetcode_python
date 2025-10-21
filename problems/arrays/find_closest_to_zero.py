@@ -4,6 +4,8 @@
 
 from typing import List
 
+# Time complexity O(n)
+# Space complexity O(1)
 def findClosestNumber(nums: List[int]) -> int:
     closest = nums[0]
     for i in range(len(nums)):
