@@ -17,7 +17,19 @@ def romanToInt(s: str) -> int:
             sum+=cur
             i+=1
     return sum
-    
+# ANOTHER METHOD
+# def romanToInt(s: str) -> int:
+#     sym_value_pair = {"I":1,"V":5,"X":10,"L":50,"C":100,"D":500,"M":1000}
+#     sum=0
+#     i=0
+#     while i < len(s)-1:
+#         if sym_value_pair[s[i]]<sym_value_pair[s[i+1]]:
+#             sum-= sym_value_pair[s[i]]
+#         else:
+#             sum+= sym_value_pair[s[i]]
+#         i+=1
+#     sum+= sym_value_pair[s[-1]]
+#     return sum
 
 if __name__ == "__main__":
     print(romanToInt("III"))      # 3
