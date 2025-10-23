@@ -1,5 +1,7 @@
 # Convert a Roman numeral to an integer.
 
+# Time complexity O(n)
+# Space complexity O(1)
 def romanToInt(s: str) -> int:
     sym_value_pair = {"I":1,"V":5,"X":10,"L":50,"C":100,"D":500,"M":1000}
     sum=0

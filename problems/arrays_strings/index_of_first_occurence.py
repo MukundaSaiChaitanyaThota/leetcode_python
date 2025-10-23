@@ -3,6 +3,8 @@
 # Given two strings needle and haystack, return the index of the first occurrence of needle in haystack,
 # or -1 if needle is not part of haystack.
 
+# Time complexity O(n)
+# Space complexity O(1)
 def strStr(haystack: str, needle: str) -> int:
     m = len(haystack)
     n = len(needle)

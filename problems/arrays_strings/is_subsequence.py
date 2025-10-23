@@ -4,6 +4,8 @@
 # by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters.
 #  (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
 
+# Time complexity O(n)
+# Space complexity O(1)
 def isSubsequence(s: str, t: str) -> bool:
     A = len(s)
     i=0

@@ -7,6 +7,8 @@
 # Return k.
 from typing import List
 
+# Time complexity O(n)
+# Space complexity O(1)
 def removeElement( nums: List[int], val: int) -> int:
     j=0
     for i in range(len(nums)):
