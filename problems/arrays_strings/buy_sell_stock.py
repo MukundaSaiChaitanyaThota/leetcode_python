@@ -6,6 +6,9 @@
 
 from typing import List
 
+# Brute Force Approach
+# Time Complexity: O(n^2)
+# Space Complexity: O(1)
 def maxProfit(prices: List[int]) -> int:
     max_value=0
     for j in range(len(prices)-1):
@@ -13,6 +16,19 @@ def maxProfit(prices: List[int]) -> int:
             if prices[i]>prices[j]:
                 max_value=max((prices[i]-prices[j]),max_value)
     return max_value
+
+# Optimized Approach
+# Time Complexity: O(n)
+# Space Complexity: O(1)
+def maxProfit(prices: List[int]) -> int:
+    max_profit=0
+    min_value=float('inf')
+    for i in range(len(prices)):
+        if min_value>prices[i]:
+            min_value=prices[i]
+        else:
+            max_profit=max((prices[i]-min_value),max_profit)
+    return max_profit
 
 if __name__ == "__main__":
     prices = [7,1,5,3,6,4]
