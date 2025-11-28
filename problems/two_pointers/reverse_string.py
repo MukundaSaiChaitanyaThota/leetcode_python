@@ -15,3 +15,11 @@ def reverseString(s: List[str]) -> None:
         start+=1
         end-=1
     return s
+
+
+if __name__ == "__main__":
+    s = ["h","e","l","l","o"]
+    print(reverseString(s))  # Output: ["o","l","l","e","h"]
+
+    s = ["H","a","n","n","a","h"]
+    print(reverseString(s))  # Output: ["h","a","n","n","a","H"]
