@@ -3,6 +3,9 @@
 # Note: The solution set must not contain duplicate triplets.
 
 from typing import List
+
+# Time Complexity: O(n^2)
+# Space Complexity: O(1) (excluding the space for the output)
 def threeSum(nums: List[int]) -> List[List[int]]:
     nums.sort()
     result=[]
